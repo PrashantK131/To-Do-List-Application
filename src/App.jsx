@@ -1,9 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './Components/Header'
 import ToDoList from './Components/ToDoList'
 import './App.css'
 
 function App() {
+
+  // Initializing state with data from Local Storage if it exists
+  const [todos, setTodos] = useState(() => {
+    const savedTodos = localStorage.getItem('my-todo-list');
+    return savedTodos ? JSON.parse(savedTodos) : [];
+  });
+
+  // useEffect to save to Local Storage whenever 'todos' state changes
+  useEffect(() => {
+    localStorage.setItem('my-todo-list', JSON.stringify(todos));
+  }, [todos]);
 
   // Handler to create a new task object and add it to the state
   const addTodo = (text) => {
