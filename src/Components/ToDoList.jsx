@@ -1,9 +1,13 @@
+import ToDoItem from './ToDoItem';
 
-function ToDoList(){
+function ToDoList({ todos, onDelete, onToggle, onEdit }){
 
     return(
-        <div>
-
+        <div className="todo-list">
+            {todos.length === 0 ? (<p className="empty-msg">No tasks yet. Add one above!</p>
+            ) : (todos.map((todo) => (
+            <ToDoItem key={todo.id} todo={todo} onDelete={onDelete} onToggle={onToggle} onEdit={onEdit}/>))
+            )}
         </div>
     )
 }
