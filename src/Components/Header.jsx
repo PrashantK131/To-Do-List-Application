@@ -23,6 +23,6 @@ function Header({onAdd}){
             </form>
         </header>
     )   
-};
+}
 
 export default Header;
