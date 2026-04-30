@@ -1,16 +1,41 @@
-# React + Vite
+# 📝 React To-Do List
+A modern, lightweight and fully responsive To-Do application built with React and Vite. This application allows users to manage their daily tasks efficiently with persistent data storage and a clean user interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
+    - Full CRUD Functionality: Create, Read, Update and Delete tasks.
+    - Task Completion: Toggle tasks as "completed" with a visual strike-through effect.
+    - Data Persistence: Integrated with localStorage so your tasks remain saved even after refreshing the browser.
+    - Responsive Design: Hand-crafted media queries for differnt devices.
+    - Inline Editing: Update task descriptions on the fly without leaving the main view.
+    - Clean UI: A card-based design with smooth transitions and hover effects.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
+    Framework: React 
+    Build Tool: Vite
+    Styling: CSS
+    Storage: Browser LocalStorage API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📂 Project Structure
 
-## React Compiler
+    src/
+    ┣ Components/
+    ┃ ┣ Header.jsx      # Input field and form logic
+    ┃ ┣ ToDoItem.jsx    # Individual task logic (Edit/Delete/Toggle)
+    ┃ ┗ ToDoList.jsx    # Container for mapping task items
+    ┣ App.jsx           # Main application logic & state management
+    ┣ App.css           # Global styles and responsive media queries
+    ┣ main.jsx          # Entry point
+    ┗ index.css         # Reset and base styles
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📝 How to Run
+    - Clone or download the project files.
+    - Install node modules i.e. "npm install"
+    - Run "npm run dev".
 
-## Expanding the ESLint configuration
+## 📌 Implementation Details 
+    - Code is thoroughly commented to explain complex logics.
+    - Github Link: [https://github.com/PrashantK131/To-Do-List-Application]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👨‍💻 Author
+
+[Prashant Kumar]
